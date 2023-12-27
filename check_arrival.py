@@ -2,9 +2,9 @@ from datetime import time
 
 
 def check_arrival_time(plan_arrival: time, fact_arrival: time) -> str:
-    plan_arrival = (plan_arrival.hour * 60) + plan_arrival.minute
+    plan_arrival_minutes = (plan_arrival.hour * 60) + plan_arrival.minute
     fact_arrival_minutes = (fact_arrival.hour * 60) + fact_arrival.minute
-    difference_minutes = fact_arrival_minutes - plan_arrival
+    difference_minutes = fact_arrival_minutes - plan_arrival_minutes
 
     if difference_minutes > 0:
         return f"Самолет опаздывает на {difference_minutes} минут"
