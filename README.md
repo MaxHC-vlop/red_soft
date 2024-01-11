@@ -2,10 +2,19 @@
 
 Клиент-серверное приложение на соккетах (asyncio) для учета клиентских машин .
 
+## Первый тест кейс
+
+- Кейс представлен в файле `check_arrival.py`.
+
 ## Как установить
 - Склонируйте репозиторий:
 ```bash
 git clone git@github.com:MaxHC-vlop/red_soft.git
+```
+
+- Перейдите в каталог:
+```bash
+cd red_soft
 ```
 
 - Для запуска необходим [poetry](https://python-poetry.org/docs/).
@@ -70,3 +79,10 @@ User: один ко многим
 VirtualMachine: один ко многим
 ```
 ![схема](./content/DB_SCHEME.png)
+
+## Запуск тестов:
+
+- Тесты можно запустить с помощью команды:
+```bash
+poetry run pytest
+```
